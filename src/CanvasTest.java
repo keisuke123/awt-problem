@@ -6,15 +6,14 @@ class C extends Canvas{
  Image I;
  Graphics G;
  C(){
-  super();
-  x=y=s/2;
+  x=y=300;
   setSize(s,s);
   addMouseMotionListener(new MouseMotionListener(){
-   public void mouseDragged(MouseEvent e) {
+   public void mouseDragged(MouseEvent e){
     x=e.getX();y=e.getY();
     repaint();
    }
-   public void mouseMoved(MouseEvent e) {
+   public void mouseMoved(MouseEvent e){
     x=y=300;
     repaint();
    }
